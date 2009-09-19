@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docbase="/Subzero/Icicle/mrLuaLua/Images"
+   sodipodi:docname="texture_2.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"
+   inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/texture_2.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   style="display:inline">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0413386"
+     inkscape:cx="297.12608"
+     inkscape:cy="258"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     inkscape:window-width="1280"
+     inkscape:window-height="752"
+     inkscape:window-x="0"
+     inkscape:window-y="29"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4154">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop4156" />
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1;"
+         offset="1"
+         id="stop4158" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective16" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4154"
+       id="radialGradient4163"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3354663,-2.0128096e-2,1.2283329e-2,0.8149788,-170.89935,48.718657)"
+       spreadMethod="pad"
+       cx="578.64783"
+       cy="297.35989"
+       fx="578.64783"
+       fy="297.35989"
+       r="149.04633" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer1">
+    <rect
+       style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:8;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3189"
+       width="512"
+       height="256"
+       x="0"
+       y="0"
+       rx="0"
+       ry="0" />
+    <g
+       id="g3289"
+       transform="translate(62.632942,5e-7)">
+      <path
+         inkscape:tile-y0="52.623059"
+         inkscape:tile-x0="69.674705"
+         inkscape:tile-h="150.75388"
+         inkscape:tile-w="106.87785"
+         inkscape:tile-cy="128"
+         inkscape:tile-cx="123.11363"
+         sodipodi:nodetypes="ccccccccccc"
+         id="rect3226"
+         d="M 81.072992,52.623059 L 103.24642,52.623059 C 108.98252,52.623059 111.76836,57.831721 116.91367,62.977034 L 176.55256,128 L 120.22694,193.02296 C 112.83077,200.41913 108.98252,203.37694 103.24642,203.37694 L 81.072992,203.37694 C 75.336889,203.37694 66.66298,197.079 70.719016,193.02296 L 127.04464,128 L 70.719016,62.977034 C 66.66298,58.920993 75.336889,52.623059 81.072992,52.623059 z"
+         style="fill:#ffbb2d;fill-opacity:1;stroke:#ffffff;stroke-width:14;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.25" />
+      <use
+         id="use3281"
+         transform="translate(128.25343,0)"
+         xlink:href="#rect3226"
+         inkscape:tiled-clone-of="#rect3226"
+         y="0"
+         x="0"
+         width="512"
+         height="512" />
+      <use
+         id="use3283"
+         transform="translate(256.50685,0)"
+         xlink:href="#rect3226"
+         inkscape:tiled-clone-of="#rect3226"
+         y="0"
+         x="0"
+         width="512"
+         height="512" />
+    </g>
+    <g
+       id="g3348"
+       inkscape:tile-cx="64"
+       inkscape:tile-cy="340"
+       inkscape:tile-w="128"
+       inkscape:tile-h="64"
+       inkscape:tile-x0="4.7412109e-07"
+       inkscape:tile-y0="308"
+       transform="translate(0,-50)">
+      <rect
+         inkscape:tile-y0="306.83554"
+         inkscape:tile-x0="0"
+         y="308"
+         x="4.7412109e-07"
+         height="64"
+         width="64"
+         id="use3326"
+         style="fill:#5f8dd3;fill-opacity:1;stroke:none;stroke-width:14;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.25" />
+      <rect
+         inkscape:tile-y0="306.83554"
+         inkscape:tile-x0="0"
+         y="308"
+         x="64"
+         height="64"
+         width="64"
+         id="rect3346"
+         style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:14;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.25;display:inline" />
+    </g>
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g3348"
+       xlink:href="#g3348"
+       id="use3362"
+       width="512"
+       height="512" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g3348"
+       xlink:href="#g3348"
+       transform="translate(128,0)"
+       id="use3364"
+       width="512"
+       height="512" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g3348"
+       xlink:href="#g3348"
+       transform="translate(256,0)"
+       id="use3366"
+       width="512"
+       height="512" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g3348"
+       xlink:href="#g3348"
+       transform="translate(384,0)"
+       id="use3368"
+       width="512"
+       height="512" />
+  </g>
+  <g
+     inkscape:label="Logo"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-60.5,-402.36218)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       id="g4735"
+       transform="translate(-4,-4)">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/carmine_128x32.png"
+         sodipodi:nodetypes="cccccc"
+         id="path2404"
+         d="M 444.5,889.57986 C 444.5,885.58128 447.7187,882.36218 451.71676,882.36218 L 572.5,882.36218 L 572.48366,907.14448 C 572.48366,911.14308 569.26496,914.36218 565.26688,914.36218 L 444.5093,914.36218"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1" />
+      <text
+         transform="scale(0.9999361,1.0000639)"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/carmine_128x32.png"
+         sodipodi:linespacing="125%"
+         id="text2406"
+         y="906.80103"
+         x="449.3692"
+         style="font-size:29.55882454px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Trek;-inkscape-font-specification:Trek"
+         xml:space="preserve"><tspan
+           y="906.80103"
+           x="449.3692"
+           id="tspan2408"
+           sodipodi:role="line">car</tspan></text>
+      <text
+         transform="scale(0.9999361,1.0000639)"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/carmine_128x32.png"
+         sodipodi:linespacing="125%"
+         id="text2410"
+         y="906.80103"
+         x="501.72015"
+         style="font-size:29.55882454px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Trek;-inkscape-font-specification:Trek"
+         xml:space="preserve"><tspan
+           y="906.80103"
+           x="501.72015"
+           id="tspan2412"
+           sodipodi:role="line">mine</tspan></text>
+    </g>
+  </g>
+</svg>

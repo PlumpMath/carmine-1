@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448"
+   height="1052.3622"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docbase="/Subzero/Icicle/mrLuaLua/Images"
+   sodipodi:docname="carmine.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"
+   inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/carmine_new.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective16" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="231.14881"
+     inkscape:cy="712.82375"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1280"
+     inkscape:window-height="752"
+     inkscape:window-x="0"
+     inkscape:window-y="29"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#960018;fill-opacity:1;stroke:none;stroke-opacity:1"
+       d="M 220.00847,330.48547 C 220.00847,328.48618 221.61782,326.87663 223.61685,326.87663 L 284.00847,326.87663 L 284.0003,339.26778 C 284.0003,341.26708 282.39095,342.87663 280.39191,342.87663 L 220.01312,342.87663"
+       id="rect2164"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/carmine_64x16.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.77941227px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Trek;-inkscape-font-specification:Trek"
+       x="222.44292"
+       y="339.10333"
+       id="text2389"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/carmine_64x16.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="scale(0.9999361,1.0000639)"><tspan
+         sodipodi:role="line"
+         id="tspan2391"
+         x="222.44292"
+         y="339.10333">car</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.77941227px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff9955;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Trek;-inkscape-font-specification:Trek"
+       x="248.61841"
+       y="339.10333"
+       id="text2393"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/carmine_64x16.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="scale(0.9999361,1.0000639)"><tspan
+         sodipodi:role="line"
+         id="tspan2395"
+         x="248.61841"
+         y="339.10333">mine</tspan></text>
+    <path
+       style="fill:#960018;fill-opacity:1;stroke:none;stroke-opacity:1"
+       d="M 60.5,409.57986 C 60.5,405.58128 63.7187,402.36218 67.71676,402.36218 L 188.5,402.36218 L 188.48366,427.14448 C 188.48366,431.14308 185.26496,434.36218 181.26688,434.36218 L 60.5093,434.36218"
+       id="path2404"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/carmine_128x32.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:29.55882454px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Trek;-inkscape-font-specification:Trek"
+       x="65.344673"
+       y="426.83173"
+       id="text2406"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/carmine_128x32.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="scale(0.9999361,1.0000639)"><tspan
+         sodipodi:role="line"
+         id="tspan2408"
+         x="65.344673"
+         y="426.83173">car</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:29.55882454px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff9955;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Trek;-inkscape-font-specification:Trek"
+       x="117.69562"
+       y="426.83173"
+       id="text2410"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/mnt/Subzero/batcave/carmine/models/Images/carmine_128x32.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="scale(0.9999361,1.0000639)"><tspan
+         sodipodi:role="line"
+         id="tspan2412"
+         x="117.69562"
+         y="426.83173">mine</tspan></text>
+  </g>
+</svg>

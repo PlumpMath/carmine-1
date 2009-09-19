@@ -1,0 +1,6 @@
+Features planned for next version:
+
+* Basic support for materials
+* Support for IPO based animation
+* Multitexturing
+* OpenGL ES specific code generation

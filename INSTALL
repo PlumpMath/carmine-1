@@ -1,0 +1,62 @@
+How to install the Carmine script
+-----------------------------------------------------------------------------------------------
+
+You can place the exporter in the scripts folder situated in the ".blender" folder.
+
+You may also place a link to the script at this location and edit it from a custom location. 
+This would be useful if you are making changes to the script to suit your needs.
+
+
+
+How to export a scene
+-----------------------------------------------------------------------------------------------
+
+Running the "carmine" option from the Export scripts must show the exporter's UI.
+It is fairly simple to use. Once the "Export" button is clicked, the scene is exported to a 
+"gen" folder which is created at the path from which Blender3D is run. It is vital that you name
+the scene and all the exported objects with distinct "C or C++ friendly" names.
+
+For every scene exported, a corresponding .C and .H file is generated. These files must be 
+included in development project for further use. To ease the development, "extern" references to 
+each entity is listed as a comment at the end of the .H file. This way, you can copy the text to 
+add objects to you application and start controlling it right away.
+
+
+
+How to build and run the demo
+-----------------------------------------------------------------------------------------------
+Currently the demos are known to build and run on Linux. Official windows version will be available soon.
+To build the demos you will need the following libraries installed on your system.
+
+FTGL,
+Freetype,
+FreeImage,
+SDL,
+and OpenGL
+
+After correcting any path for the above libraries in the Sconstruct file, you may build the project.
+
+1- Run Blender3D with the current path as the topmost folder in the carmine project (where the 
+   SConstruct script exists).
+2- Open any one one of the blender scenes provided in the "models" folder. Export using 
+   File->Export->carmine(.py).
+3- Run "scons" from the topmost folder in the carmine project.
+4- Copy any images used as textures from "models/Images" to "bin/Images". This step is not 
+   required for the examples as duplicate image files already exist in "bin/Images" the folder.
+5- Change working directory to the "bin" folder.
+6- Run "./carmine" from the command prompt.
+7- You may use TAB to switch through the cameras in the scene. The "l" key can be used to toggle 
+   the lighting. The "w" key can be used to slide the object named "CentreAnchor".
+
+
+
+How to build the source documentation
+-----------------------------------------------------------------------------------------------
+
+You will require Doxygen to generate the source documentation. Please run "doxygen doxygen.conf" 
+from command line with the current path as the topmost folder in the carmine project (where the 
+SConstruct script exists).
+
+
+
+Hope you find carmine useful.

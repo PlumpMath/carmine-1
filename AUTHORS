@@ -1,0 +1,24 @@
+
+"Carmine" is an open source project with help from the Blender3D community
+and the NeHe GameDev Community
+
+The project was started by Anup Jayapal Rao
+
+Following people contributed to "Carmine" [knowingly or unknowingly :-) ]
+(random order, please let us know if your name should be in this list)
+
+Arben (Ben) Omari : Blender script template
+Jeff Molofee (NeHe) : Initial C++ code with SDL, OpenGL and GLee integrated together
+Ben Woodhouse : GLee 
+Song Ho Ahn : Vertex Buffer Object template
+Mitch Hughes: Angle conversion routines
+Anup Jayapal Rao: most of the other stuff
+
+I would like to thank the developers/contributors of the following projects:
+FTGL
+Freetype
+FreeImage
+SDL
+Python
+and
+Blender3D

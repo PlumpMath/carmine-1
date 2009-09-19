@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>renegadepixels.in - carmine exporter</title>
+
+<style type="text/css">
+html, body {
+margin: 0;
+padding: 0;
+}
+#header {
+width: 100%;
+background-position: center top;
+background-repeat: no-repeat;
+background-color: black;
+height: 64px;
+}
+.zeroborder {
+border-style: none;
+border-width: 0px;
+text-align: center;
+font-size: 0px;
+}
+#Fluid {
+background-image: url(images/Fluid.png);
+height: 265px;
+}
+#MainColumn {
+margin: auto;
+height: 258px;
+width: 786px;
+}
+#FooterColumn {
+margin: auto;
+height: 60px;
+width: 310px;
+}
+#Column {
+height: 258px;
+clear: none;
+float: left;
+width: 262px;
+}
+#Left {
+border-style: none;
+float: left;
+background-image: url(images/Left.png);
+width: 24px;
+height: 265px;
+}
+#Top {
+border-style: none;
+background-image: url(images/Top.png);
+clear: none;
+width: 214px;
+float: left;
+background-repeat: no-repeat;
+height: 265px;
+}
+#Bottom {
+border-style: none;
+background-image: url(images/Bottom.png);
+clear: none;
+width: 214px;
+background-repeat: no-repeat;
+margin-left: 24px;
+float: left;
+height: 9px;
+margin-top: -9px;
+}
+#Right {
+border-style: none;
+float: right;
+background-image: url(images/Right.png);
+width: 24px;
+height: 265px;
+}
+#footer {
+background: white none repeat scroll 0% 50%;
+clear: both;
+height: 80px;
+}
+h1 {
+margin: 0px 0 0;
+padding: 0;
+}
+h2 {
+margin: 16px 0px 0px;
+padding: 0;
+}
+#article {
+border-style: none;
+margin: 0px 12px 5px;
+padding: 0px;
+min-height: 250px;
+text-align: left;
+color: black;
+top: 0px;
+float: left;
+line-height: 19px;
+font-family: sans-serif;
+font-size: 13px;
+}
+#article img {
+border: 1px solid #e7e7e7;
+margin: 7px;
+padding: 4px;
+font-size: 12px;
+color: black;
+line-height: 20px;
+clear: right;
+text-align: justify;
+font-family: sans,Arial;
+}
+#footercontent {
+margin: 0px;
+padding: 7px 7px 0 0;
+font-size: 12px;
+top: 0px;
+color: #999999;
+text-align: center;
+font-family: sans,Arial;
+}
+#gap {
+border-style: none;
+border-width: 0px;
+}
+#codeblock {
+border: 2px dashed #cccccc;
+padding: 7px;
+font-size: 12px;
+color: black;
+line-height: 20px;
+clear: right;
+text-align: justify;
+background-color: #f0f0f0;
+font-family: monospace;
+}
+</style></head>
+<body class="zeroborder" style="margin: 0pt; text-align: center;">
+<div style="text-align: left;" id="header">
+<img style="width: 128px; height: 32px;" alt="carmine" src="images/carmine_128x32.png" hspace="16" vspace="16"></div>
+<img style="width: 100%; height: 30px;" alt="" src="images/article_lower_fluidbkg.png" align="middle">
+<div id="article">
+<h1>carmine exporter</h1>
+<h3>From&nbsp;simple scenes in Blender3D to OpenGL C / C++
+code !</h3>
+<span style="font-style: italic;">Developed by Anup
+Jayapal Rao</span><br>
+<br>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="text-align: center; width: 43%;">Grab the
+current release <span style="font-weight: bold;">v0.1 for Linux</span> of the <a href="http://www.box.net/shared/kt2rdy1yr5">Exporter
+with demo code</a><br>
+<embed src="http://www.box.net/static/flash/box_explorer.swf?widget_hash=0xczbvbx6l&amp;v=0&amp;cl=0" wmode="transparent" type="application/x-shockwave-flash" height="240" width="400">
+<br>
+Bleeding edge version is available for developers through <br>
+<a href="http://projects.blender.org/projects/bf-extensions">projects.blender.org/projects/bf-extensions</a></td>
+<td style="width: 16%;"></td><td style="text-align: center; color: rgb(240, 240, 240);">Google
+ad space</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: justify;">
+<h4>Introduction</h4>
+I
+enjoy working on 3D graphics, be it programming with OpenGL and its
+extensions or modelling nitty gritty details into a scene with
+Blender3D. I am sure that any OpenGL programmer would&nbsp;find
+pride in
+developing&nbsp;a quick demo or trying out a new add-on library.
+This
+works well if you are experienced or have the comfort of using several
+of the&nbsp; publicly available libraries for your platform. The
+most
+common libraries or frameworks are used with an intent to load models
+or create scene graphs.
+However, not all programmers would like to use bulky model loaders and
+would prefer&nbsp;to use something light weight. This is true
+especially on embedded systems (using&nbsp;OpenGL ES) where a
+programmer is constrained by&nbsp;system resources and of course...
+limited number of options to load models. This becomes tougher for
+novice OpenGL programmers who&nbsp;need to render a simple scene
+without having to hassle with large APIs.<br>
+<br>
+I went through
+something similar when I was attempting my 3D project. &nbsp;Since
+Blender3D has a fantastic plugin interface, I wrote the "carmine"
+exporter to export&nbsp;simple scene setups in Blender 3D to
+readily usable code C / C++ structures
+and arrays. The data
+was written to suit OpenGL requirements and optimized for space
+consumption. Additionally, I added the ability to switch between
+cameras in a&nbsp;scene, a nice to have feature while experimenting
+with OpenGL.<br>
+<br>
+<br>
+<span style="font-weight: bold;">What kind of scenes can I
+export and&nbsp;what's the catch ?</span>&nbsp;<br>
+<br>
+Simple scenes can be exported. By simple, I mean ...<br>
+<br>
+<div style="margin-left: 40px;">... objects utilising only
+one texture (sorry ... no multitexturing) image per object. This
+texture may be shared with other objects in the scene. There is no
+limit on number of objects or distinct textures used. <br>
+<br>
+... the scene does not use modifiers. Which means that&nbsp;if you
+use the mirror modifier, you must apply it before exporting it to see
+the complete object. <br>
+<br>
+... the exporter limits itself to exporting vertice data, texture
+co-ordinates and optionally normals. It does not export material
+information yet (or shader information).<br>
+<br>
+... the exporter exports parented objects, even parented cameras.
+However, nested and parented cameras do not seem picture perfect,
+though unparented cameras or cameras with a single parent seem to work
+just fine.<br>
+<br>
+... upto 8 spot lamps can be exported. These are simple lamps and may
+not be parented to any object.<br>
+<br>
+... IPOs in the scene are not exported (Don't worry. Work is under way
+and must be&nbsp;available in the next version ... but for that I
+need your feedback on this version).<br>
+</div>
+<br>
+<br>
+<span style="font-weight: bold;">How do I&nbsp;use the
+script ?</span><br>
+<br>
+You can place the exporter in the scripts folder situated in the
+".blender" folder. You may also place a link to the script at this
+location and edit it from a custom location. This would be useful if
+you are making changes to the script to suit your needs.<br>
+<br>
+Running the "carmine" option from the Export scripts must show the
+exporter's UI. It is fairly simple to use. Once the "Export" button is
+clicked, the scene is exported to a <br>
+"gen" folder which is created at the path from which Blender3D is run.
+It is vital that you name the scene and all the exported objects with
+distinct "C or C++ friendly" names.<br>
+<br>
+For every scene exported, a corresponding .C and .H file is generated.
+These files must be included in your development project for further
+use. To
+ease the development, "extern" reference to each entity is listed as a
+comment at the end of the .H file. This way, you can copy the text to
+add objects to you application and start controlling it right away.<br>
+<br>
+<br>
+<span style="font-weight: bold;">How do I&nbsp;build
+and run the demo ?</span><br>
+<br>
+Kindly follow the mentioned steps:<br>
+<ol>
+<li>Run Blender3D with the current path as the topmost folder
+in the carmine project (where the&nbsp;SConstruct script exists).</li>
+<li>Open any one one of the example scenes provided in the
+"models" folder. Export
+using&nbsp;File-&gt;Export-&gt;carmine(.py).</li>
+<li>Run "scons" from the topmost folder in the carmine project.</li>
+<li>Copy the&nbsp;images used as textures from
+"models/Images" to "bin/Images". This step is not&nbsp;required for
+the examples as duplicate image files already exist in "bin/Images" the
+folder.</li>
+<li>Change working directory to the "bin" folder.</li>
+<li>Run "./carmine" from the command prompt.</li>
+<li>You may use TAB to switch through the cameras in the scene.
+The "l" key can be used to toggle&nbsp;the lighting. The
+"w"&nbsp; key
+can be used to slide the object named "CentreAnchor".</li>
+</ol>
+<br>
+<br>
+<span style="font-weight: bold;">What does the script
+generate and how is it&nbsp;rendered by the demo ?</span><br>
+<br>
+The script generates a table containing the combinations of vertices,
+texture co-ordinates and normals. This table is referred by an index
+table which is
+generated based on the face geometry. Combining both of this and
+placing them in the GPU memory allows for
+quick renders. The most common technique to render such data
+efficiently is to use VBOs (Vertex Buffer Objects). You can always use
+the generated data structure with VAs (Vertex Arrays). Though it might
+be inefficient in terms of speed (when in comparison with VBOs or VAs),
+you may be also able to use the data structures by making simpler
+OpenGL calls (glTexCoord2f, glVertex3f, glNormal3f) on the data. In the
+included demo, code has been provided to demonstrate the use of the
+exported structures using VBOs.<br>
+<br>
+<br>
+<span style="font-weight: bold;">What is this <span style="font-style: italic; color: rgb(150, 0, 24);">magic
+indexing</span> that is referred to in your exporter ?</span><br>
+<br>
+I came up with that term because I just did not know what to call it.
+Basically, a Blender3D object has vertex information with vertice ,
+texture and normal data in a sequence which is best&nbsp;as per the
+design of Blender3D. Another OpenGL
+application may or may not follow the same design. To add to this, when
+using VBO or VA, it is vital that vertex data be provided as a single
+combination. This meant that it was not possible to have separate look
+up tables or index arrays for vertice, texture or normal data. Only one
+index array was permitted. To utilise the VBO (as performance was also
+my concern), I added a code which expanded the condensed list of
+vertex, texture and normal data to the smallest set of unique
+combinations and subsequently updated the index array from Blender 3D.
+This was much more efficient when compared to my initial implementation
+which
+contained a lot of repeated combinations resulting in bloated
+structures. <br>
+<br>
+An example to demonstrate that fact is shown below. <br>
+<br>
+<div style="text-align: center;"><img style="width: 626px; height: 459px;" alt="meshCube example" src="images/meshCube.png"><br>
+</div>
+<br>
+The
+index array and the size of the vertice table for the above cube
+demonstrates the difference. The vertex data contains 3D co-ordinate
+followed by texture co-ordinate for every entry.<br>
+<br>
+<span style="font-style: italic;">Exported code without
+magic indexing ... 24 vertex combinations with loads of repetitions !</span><br>
+<div id="codeblock">GLuint&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+arrIndices_meshCube[NUM_meshCube_INDICES]
+=&nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; // QuadIndices<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 0,1,2,3,<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 4,5,6,7,<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 8,9,10,11,<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 12,13,14,15,<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 16,17,18,19,<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 20,21,22,23,<br>
+};<br>
+<br>
+fObj3DVertex&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+arrVertex_meshCube[NUM_meshCube_VERTICES]= {<br>
+&nbsp;&nbsp;&nbsp; // QuadVertices<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, 1.0f, -1.0f},{0.640625f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, -1.0f, -1.0f},{0.359375f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, -1.0f, -1.0f},{0.359375f,
+0.07421875f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, 1.0f, -1.0f},{0.640625f,
+0.07421875f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, 1.0f, 1.0f},{0.640625f,
+0.62890625f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, 1.0f, 1.0f},{0.640625f,
+0.90625f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, -1.0f, 1.0f},{0.359375f,
+0.90625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, -1.0f, 1.0f},{0.359375f,
+0.62890625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, 1.0f, -1.0f},{0.640625f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, 1.0f, 1.0f},{0.640625f,
+0.62890625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, -1.0f, 1.0f},{0.359375f,
+0.62890625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, -1.0f, -1.0f},{0.359375f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, -1.0f, -1.0f},{0.359375f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, -1.0f, 1.0f},{0.08203125f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, -1.0f, 1.0f},{0.08203125f,
+0.07421875f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, -1.0f, -1.0f},{0.359375f,
+0.07421875f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, -1.0f, -1.0f},{0.359375f,
+0.07421875f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, -1.0f, 1.0f},{0.359375f,
+0.04296875f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, 1.0f, 1.0f},{0.640625f,
+0.04296875f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, 1.0f, -1.0f},{0.640625f,
+0.07421875f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, 1.0f, 1.0f},{0.91796875f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, 1.0f, -1.0f},{0.640625f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, 1.0f, -1.0f},{0.640625f,
+0.07421875f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, 1.0f, 1.0f},{0.91796875f,
+0.07421875f} },<br>
+};<br>
+</div>
+<br>
+<br>
+<span style="font-style: italic;">Exported code with magic
+indexing ... just 14 vertex combinations !</span><br>
+<div id="codeblock">
+GLuint&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+arrIndices_meshCube[NUM_meshCube_INDICES]
+=&nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; // QuadIndices<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 0,1,2,3,<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 4,7,6,5,<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 0,4,5,1,<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 1,8,9,2,<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 2,10,11,3,<br>
+&nbsp;&nbsp;&nbsp; &nbsp; 12,0,3,13,<br>
+};<br>
+&nbsp;&nbsp;&nbsp; <br>
+fObj3DVertex&nbsp;&nbsp;&nbsp;
+arrVertex_meshCube[NUM_meshCube_VERTICES]= {<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, 1.0f, -1.0f},{0.640625f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, -1.0f, -1.0f},{0.359375f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, -1.0f, -1.0f},{0.359375f,
+0.07421875f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, 1.0f, -1.0f},{0.640625f,
+0.07421875f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, 1.0f, 1.0f},{0.640625f,
+0.62890625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, -1.0f, 1.0f},{0.359375f,
+0.62890625f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, -1.0f, 1.0f},{0.359375f,
+0.90625f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, 1.0f, 1.0f},{0.640625f,
+0.90625f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, -1.0f, 1.0f},{0.08203125f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, -1.0f, 1.0f},{0.08203125f,
+0.07421875f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, -1.0f, 1.0f},{0.359375f,
+0.04296875f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, 1.0f, 1.0f},{0.640625f,
+0.04296875f} },<br>
+&nbsp;&nbsp;&nbsp; { {1.0f, 1.0f, 1.0f},{0.91796875f,
+0.3515625f} },<br>
+&nbsp;&nbsp;&nbsp; { {-1.0f, 1.0f, 1.0f},{0.91796875f,
+0.07421875f} },<br>
+};<br>
+</div>
+<br>
+<br>
+<h4>And ... why is it called carmine ? I don't see what the name
+of a colour has to do with the exporter !</h4>
+Well,
+my&nbsp;car project was an attempt to learn&nbsp;3D and physics
+programming concepts. <br>
+I designed a low poly car (for faster drawing speed) on my own for
+experimentation. Hence, the egoistic name "car mine". :-)<br>
+<span style="font-weight: bold;"><br>
+</span><span style="font-weight: bold;"><br>
+Request for&nbsp;contributions <br>
+</span><br>
+Please feel free to contact me to provide details on bugs
+and bigfixes. Additions to code and added features will be appreciated.
+<br>
+If you would like to join development, you are gladly welcome.&nbsp;<br>
+<br>
+Kindly send your suggestions and feedback to &nbsp; &nbsp;
+&nbsp; &nbsp;<span style="font-weight: bold;"> <span style="font-style: italic;">anupkadam &lt; # AT #
+&gt; renegadepixels.in</span></span><br>
+<span style="font-weight: bold;"><br>
+<br>
+<br>
+Credits&nbsp;</span><br>
+<br>
+"carmine" is an open source project.&nbsp;
+The code was written with valuable learnings and contributions
+pulled&nbsp;from the Blender3D community and the NeHe GameDev
+Community<br>
+The project was started by Anup Jayapal Rao<br>
+<br>
+Following people contributed to "Carmine" [knowingly or unknowingly :-)
+] <br>
+(in random order, please let me know if your name should be in this
+list)<br>
+<br>
+<div style="margin-left: 40px;">
+<ul>
+<li>Arben (Ben) Omari : Blender script template</li>
+<li>Jeff Molofee (NeHe) &nbsp;at&nbsp;<a href="http://nehe.gamedev.net/">NeHe Productions</a>:
+Initial C++ code with SDL, OpenGL and GLee integrated together</li>
+<li>Ben Woodhouse : <a href="http://elf-stone.com/glee.php">GLee</a>
+</li>
+<li>Song Ho Ahn : <a href="http://www.songho.ca/opengl/gl_vbo.html">Vertex Buffer
+Object template</a></li>
+<li>Mitch Hughes: Angle conversion routines</li>
+<li>Anup Jayapal Rao: most of the other stuff :-)</li>
+</ul>
+</div>
+<br>
+I would like to thank the developers/contributors of the following
+projects:<br>
+<div style="margin-left: 40px;">
+<ul>
+<li>FTGL</li>
+<li>Freetype</li>
+<li>FreeImage</li>
+<li>SDL</li>
+<li>Python</li>
+<li>and, Blender3D</li>
+</ul>
+</div>
+<br>
+Additionally, I would like to thank the official <a href="http://www.opengl.org/discussion_boards/">OpenGL Forum</a>
+for helping me with my queries at a very short notice.<br>
+</div>
+<br>
+<br>
+<br>
+<div id="codeblock">The code has been released
+under&nbsp;<a href="http://www.gnu.org/licenses/lgpl-3.0.txt">LGPL
+V3 License</a>. Please refer to licensing terms at the link
+provided.<br>
+All&nbsp;derived works must carry credits, source code and license
+information provided by the previous author(s). <br>
+Academic work must carry references to documentation and code.</div>
+<br>
+Hope this project helps you.<br>
+<br>
+</div>
+<div id="footercontent">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+2009 © renegadepixels.in</div>
+<div id="footercontent"><br>
+<a href="http://www.mozilla.com/firefox?from=sfx&amp;uid=248572&amp;t=317"><img style="border: 0px solid ; width: 80px; height: 15px;" alt="" src="images/firefox_badge.gif" align="middle"></a><a href="http://www.kompozer.net"><img style="border: 0px solid ; width: 80px; height: 15px;" alt="" src="images/kompozer_80x15_rollover.png" align="middle"></a><a href="http://www.w3.org/TR/REC-html40"><img style="border: 0px solid ; width: 80px; height: 15px;" alt="" src="images/valid_html401_80x15_rollover.png" align="middle"></a><a href="http://www.w3.org/Style/CSS"><img style="border: 0px solid ; width: 80px; height: 15px;" alt="" src="images/valid_css_80x15_rollover.png" align="middle"></a></div>
+</body></html>
